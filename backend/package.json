@@ -1,0 +1,14 @@
+{
+  "name": "drone-fleet-simulator-backend",
+  "version": "1.0.0",
+  "description": "Backend solver and API for the Autonomous Drone Fleet Simulator",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', ui-sans-serif, sans-serif;
+  background-color: #0A0E14;
+  background-image:
+    radial-gradient(ellipse at top, rgba(94, 234, 212, 0.04), transparent 60%),
+    radial-gradient(ellipse at bottom, rgba(167, 139, 250, 0.03), transparent 60%);
+  color: #E6EEF5;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #22303F #0F1620;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0F1620;
+}
+::-webkit-scrollbar-thumb {
+  background: #22303F;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2C3F52;
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes sweep-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes blink-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@keyframes dash-flow {
+  to { stroke-dashoffset: -40; }
+}
+
+.animate-blink-soft {
+  animation: blink-soft 1.8s ease-in-out infinite;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+input, select {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid #5EEAD4;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
