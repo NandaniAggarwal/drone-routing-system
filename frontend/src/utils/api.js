@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const client = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://multidrone-routing-system.onrender.com/api',
   timeout: 30000,
 });
 
