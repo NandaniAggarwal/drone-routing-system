@@ -5,11 +5,6 @@ a city grid, a fleet of drones, deliveries, charging stations, and dynamic
 no-fly zones, run the routing solver, and watch the resulting flight plan
 animate on a radar-style map.
 
-The routing **algorithm itself is an unmodified line-for-line port** of the
-provided Python reference solution into JavaScript — see
-[`ALGORITHM_PORT_NOTES.md`](./ALGORITHM_PORT_NOTES.md) for the verification
-methodology (the JS port was diffed against the original Python script
-running side-by-side on identical inputs).
 
 ```
 /frontend          React + Vite + Tailwind UI
